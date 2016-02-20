@@ -179,7 +179,7 @@ lookupHash = md5(testword).digest()
 lookupValue = lookupHash[:4]
 print lolCracktree.lookupTable('dumprockyou', lookupValue, 4) # will output True
 
-testword = "testWordNotInDict"		# test is a word in the dictionary
+testword = "testWordNotInDict"		# testWordNotInDict is a word not in the dictionary
 lookupHash = md5(testword).digest()
 lookupValue = lookupHash[:4]
 print lolCracktree.lookupTable('dumprockyou', lookupValue, 4) # will output False
