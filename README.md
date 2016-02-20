@@ -26,3 +26,19 @@ To use the POC, first download the rockyou.txt wordlist from a site like:
 https://wiki.skullsecurity.org/Passwords
 
 Put the rockyou.txt file next to negativeTablePOC.py and run it (python negativeTablePOC.py). Now comment out line 172 and play with the lookups.
+
+### Sample output
+
+```
+$ python negativeTablePOC.py 
+Creating table for file: rockyou.txt
+Choosing table size..
+Using 4 bytes gives me 4294967296 values of space
+I estimate 2254631.96874 collisions
+Leaving about 137666865.031 values used
+This table will be filled by about 0.032053064795
+Starting loading wordlist..
+Performing two lookups
+True
+False
+```
